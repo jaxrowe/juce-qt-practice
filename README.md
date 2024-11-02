@@ -14,6 +14,7 @@ Project Descriptions :
 
 - Test/Audio/
 	- ConsoleNoise : most simple audio system, least juce audio classes as possible.
+	- ConsoleNoiseMultiThread : failed experiment just here to show how terrible I am
 
 ---
 
