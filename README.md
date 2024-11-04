@@ -3,6 +3,8 @@
 For practicing juce, qml, and juce with qml. <br>
 C++20 modules will try to be used, CMake 3.30 and clang++ 18.1.3 supports them.
 
+To build any qml projects change this to your Qt installation in the CMakeLists : `set(CMAKE_PREFIX_PATH "/home/jax/Qt/6.7.2/gcc_64")`
+
 ---
 
 Tests/Audio - only juce <br>
@@ -14,7 +16,7 @@ Project Descriptions :
 
 - Test/Audio/
 	- ConsoleNoise : Most simple audio system, least juce audio classes as possible.
-	- ConsoleNoiseMultiThread : failed experiment just here to show how terrible I am.
+	- ConsoleNoiseMultiThread : Failed experiment just here to show how terrible I am.
 
 - Tests/GUI/
 	- NotifierReceiver : Design pattern to trade data between two objects in one qml document.
@@ -26,7 +28,6 @@ Project Descriptions :
 Since CMake 3.28. The compilation of any given source that `import` a module requires the binary module interface (BMI) of that module - meaning the compilation of modules must be done before
 the sources that depend on them. This strict logic requires build-time resolution, that is implemented in CMake's built-in 'scanner', which will scan all sources for module dependancies by default.
 
----
 
 Modules must be added to the targets `CXX_MODULES` file set :
 ```
