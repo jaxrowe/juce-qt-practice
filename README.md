@@ -13,8 +13,11 @@ Tests/Apps - juce and qml <br>
 Project Descriptions :
 
 - Test/Audio/
-	- ConsoleNoise : most simple audio system, least juce audio classes as possible.
-	- ConsoleNoiseMultiThread : failed experiment just here to show how terrible I am
+	- ConsoleNoise : Most simple audio system, least juce audio classes as possible.
+	- ConsoleNoiseMultiThread : failed experiment just here to show how terrible I am.
+
+- Tests/GUI/
+	- NotifierReceiver : Design pattern to trade data between two objects in one qml document.
 
 ---
 
