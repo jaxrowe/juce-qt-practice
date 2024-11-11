@@ -16,8 +16,9 @@ Project Descriptions :
 
 - Test/Audio/
 	- ConsoleNoise : Most simple audio system, least juce audio classes as possible.
+	- ConsoleNoiseClean : Improved simple audio system. Uses ScopedJuceInitialiser_GUI to instance the MessageManager, which also solved leaks of related objects. Other audio related objects (Player, Manager..) are no longer created in global scope.
 	- ConsoleNoiseMultiThread : Failed experiment just here to show how terrible I am.
-
+	
 - Tests/GUI/
 	- NotifierReceiver : Design pattern to trade data between two objects in one qml document.
 
