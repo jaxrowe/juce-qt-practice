@@ -1,7 +1,7 @@
 ### juce-qt-practice
 
 For practicing juce, qml, and juce with qml. <br>
-C++20 modules will try to be used, CMake 3.30 and clang++ 18.1.3 supports them.
+C++20 modules will be used, see links in footer for toolchain support.
 
 To build any qml projects change this to your Qt installation in the CMakeLists : `set(CMAKE_PREFIX_PATH "/home/jax/Qt/6.7.2/gcc_64")`
 
@@ -21,6 +21,9 @@ Project Descriptions :
 	
 - Tests/GUI/
 	- NotifierReceiver : Design pattern to trade data between two objects in one qml document.
+- Tests/App/
+  - App0 : Play noise along with a QML window. This is Audio/ConsoleNoiseClean with the additional QML. The frameworks do not communicate, but shows how to build the project with them together.
+
 
 ---
 
