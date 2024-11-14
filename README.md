@@ -1,9 +1,10 @@
 ### juce-qt-practice
 
 For practicing juce, qml, and juce with qml. <br>
-C++20 modules will be used, see links in footer for toolchain support.
 
-To build any qml projects change this to your Qt installation in the CMakeLists : `set(CMAKE_PREFIX_PATH "/home/jax/Qt/6.7.2/gcc_64")`
+I planned to use C++20 modules, but Qt has no support for them and it's not coming anytime soon. Macros cannot escape modules and Qt depends on them too heavily. Some early projects may use them and there is a build section if your curious, but will be using traditional header/source now.
+
+To build any qml projects change this to your Qt installation in the CMakeLists : `set(CMAKE_PREFIX_PATH"/home/jax/Qt/6.7.2/gcc_64")`
 
 ---
 
@@ -17,6 +18,7 @@ Project Descriptions :
 - Test/Audio/
 	- ConsoleNoise : Most simple audio system, least juce audio classes as possible.
 	- ConsoleNoiseClean : Improved simple audio system. Uses ScopedJuceInitialiser_GUI to instance the MessageManager, which also solved leaks of related objects. Other audio related objects (Player, Manager..) are no longer created in global scope.
+	- ConsoleNoiseCleanHeader : same as above but header/source instead of modules.
 	- ConsoleNoiseMultiThread : Failed experiment just here to show how terrible I am.
 	
 - Tests/GUI/
