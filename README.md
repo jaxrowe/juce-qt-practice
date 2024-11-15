@@ -25,6 +25,7 @@ Project Descriptions :
 	- NotifierReceiver : Design pattern to trade data between two objects in one qml document.
 - Tests/App/
   - App0 : Play noise along with a QML window. This is Audio/ConsoleNoiseClean with the additional QML. The frameworks do not communicate, but shows how to build the project with them together.
+  - App0Header : App0 but using header/source instead of modules. Also not subclass juce audio classes anymore. This would be your good starting point for juce+qt.
 
 
 ---
